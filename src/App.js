@@ -23,7 +23,7 @@ function App() {
       <p>通常税率(10%): {tax2} 円</p>
     </div>
     setMsg(res)
-  })
+  }, [tax1, tax2])
 
   useEffect(() => {
     setTax1(Math.floor(val * 1.08))
